@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .container {
+        @apply max-w-full px-3
+    }
+
+    .deliver-rwanda-item {
+        @apply flex-grow-0 flex-shrink-0
+    }
+
+    .deliver-rwanda-img {
+        @apply w-32 object-contain rounded-md
+    }
+
+    .divider {
+        @apply w-full h-[2px] bg-gray-300 my-2
+    }
+
+    .primary-link {
+        @apply font-medium text-link
+    }
+
+    .title {
+        @apply font-bold text-lg
+    }
+
+    .footer-link {
+        @apply inline-block w-fit hover:text-orange-light
+    }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+@font-face {
+    font-family: "Amazon Ember";
+    src: url("../fonts/KFPk-9IF4FqAqY-.woff2");
+}
